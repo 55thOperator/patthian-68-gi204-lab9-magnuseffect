@@ -254,8 +254,8 @@ Transform:
   m_GameObject: {fileID: 128971847}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.70710576, z: -0, w: 0.70710784}
-  m_LocalPosition: {x: 1.8781803, y: 0.45, z: -5.289992}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 27.16, y: 1.97, z: 20.93001}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -421,8 +421,8 @@ Transform:
   m_GameObject: {fileID: 188440447}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.70710576, z: -0, w: 0.70710784}
-  m_LocalPosition: {x: -1.85, y: 0.45, z: -5.29}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 16.65, y: 1.97, z: 20.93}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -513,13 +513,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.000000014901161, z: -0, w: 1}
-  m_LocalPosition: {x: -0.111809015, y: 1, z: -10.011776}
+  m_LocalRotation: {x: 0.13052596, y: 0.000000014773681, z: 0.0000000019449884, w: 0.99144495}
+  m_LocalPosition: {x: 21.78, y: 2.76, z: -9.15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 15, y: 0, z: 0}
 --- !u!114 &330585547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -799,7 +799,7 @@ Transform:
   m_GameObject: {fileID: 464152174}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.70710576, z: -0, w: 0.70710784}
-  m_LocalPosition: {x: 21.7, y: 0.84, z: 9.81137}
+  m_LocalPosition: {x: 21.7, y: 0.84, z: 8.26}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -867,6 +867,7 @@ GameObject:
   - component: {fileID: 1103521766}
   - component: {fileID: 1103521765}
   - component: {fileID: 1103521769}
+  - component: {fileID: 1103521770}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -961,7 +962,7 @@ Transform:
   m_GameObject: {fileID: 1103521764}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 21.74, y: 0.5, z: -0.010000005}
+  m_LocalPosition: {x: 21.74, y: 1.13, z: -6.98}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -975,8 +976,8 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1103521764}
   serializedVersion: 5
-  m_Mass: 1
-  m_LinearDamping: 0
+  m_Mass: 0.43
+  m_LinearDamping: 0.1
   m_AngularDamping: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
@@ -994,6 +995,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1103521770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1103521764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 270a795d15b7ab648a710d21f7787440, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MagnusSoccerKick
+  spinSpeed: 0.5
+  kickForce: 7
+  magnusStrenght: 0.5
 --- !u!1 &1422904107
 GameObject:
   m_ObjectHideFlags: 0
@@ -1215,7 +1231,7 @@ Transform:
   m_GameObject: {fileID: 1593057136}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.70710576, z: -0, w: 0.70710784}
-  m_LocalPosition: {x: 22.92, y: 0.84, z: 9.81137}
+  m_LocalPosition: {x: 22.92, y: 0.84, z: 8.26}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1442,7 +1458,7 @@ Transform:
   m_GameObject: {fileID: 1902582192}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.70710576, z: -0, w: 0.70710784}
-  m_LocalPosition: {x: 20.488, y: 0.84, z: 9.81137}
+  m_LocalPosition: {x: 20.488, y: 0.84, z: 8.26}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
